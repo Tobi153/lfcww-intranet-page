@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+.quick-links-container {
+  /* grid-column: 2/3; */
+  /* overflow-y: hidden; */
+  position: relative;
+  /* width: 857px; */
+}
+
+.link-icons {
+  width: 20px;
+}
+
+.quick-links-title p {
+  font-family: "Syne", sans-serif;
+}
+
+.quick-links-content {
+  overflow-y: hidden;
+  /* height: 258px; */
+  overflow-x: hidden;
+}
+
+/* Slick slider custom  styles */
+.slick-dots li.slick-active button:before {
+  font-size: 13px !important;
+  /* opacity: .75;
+  color: black; */
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+
+.slick-dots {
+  bottom: -37px !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+/* .quick-links-container .slick-dots li button:before {
+  color: #0a0a0a;
+  opacity: 0.8;
+}
+
+.quick-links .slick-dots li.slick-active button:before {
+  color: #0a0a0a;
+  opacity: 1;
+} */
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .quick-links-container .slick-arrow {
+    display: none !important;
+  }
+}
+
+/* .quick-links .slick-arrow,
+.quick-links .slick-arrow {
+  background-color: red;
+  color: red;
+  fill: red;
+  display: block;
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.8;
+  color: var(--main-red);
+  padding: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+  right: -11px;
+}
+
+.slick-prev {
+  left: -26px;
+}
+
+.slick-slider.slick-initialized {
+  margin-left: -15px;
+}

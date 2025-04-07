@@ -1,0 +1,39 @@
+@import "tailwindcss";
+:root {
+  --white: #fff;
+  --light-gray: #e7e7e7;
+  --sky-blue: #d4dfed;
+  --main-red: #880909;
+  --bright-red: #ba1313;
+  --deep-red: #300e0d;
+}
+
+html {
+  /* overflow-x: hidden; */
+}
+
+#root {
+  width: 100vw;
+}
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* *:focus {
+  border: 2px solid var(--light-gray);
+} */
+
+/* .figtree-<uniquifier> {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 20px;
+  /* overflow-x: hidden; */
+}

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+.overlay {
+  background-color: #000000a9;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  cursor: pointer;
+
+  left: 0;
+}
+
+.modal {
+  background-color: #fff;
+
+  position: absolute;
+  z-index: 100000;
+  left: 52%;
+  top: 50%;
+  /* transform:; */
+  border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 30px;
+  gap: 30px; */
+  position: absolute;
+  /* transform: translate(-50%, -50%) scale(0.5); */
+  /* opacity: 0; */
+  /* transition:
+    transform 2s ease,
+    opacity 2s ease; */
+}
+
+.modal .modal-img {
+  /* width: 400px;
+  height: 300px; */
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* .modal-contents {
+  color: blue;
+  font-size: 14px;
+} */
+
+.modal-date {
+  color: var(--bright-red);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal-note {
+  color: #3c3939;
+  line-height: 1.2;
+}
+
+.modal-name {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: transparent;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: var(--bright-red); */
+  cursor: pointer;
+}
+
+.close-btn p {
+  margin-top: -5px;
+}

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.left-sidebar {
+  padding: 50px 0;
+}
+
+.bolden {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.button-play {
+  cursor: pointer;
+}

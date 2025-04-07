@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.quick-link {
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: 120%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  background-color: #060505d4;
+  background-size: 100%;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top svg {
+  width: 16px;
+}
+
+.icon {
+  /* width: 35px;
+  height: 35px; */
+  border-radius: 50%;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-arrow {
+  width: 24px;
+}
+
+.title {
+  color: var(--white);
+}
