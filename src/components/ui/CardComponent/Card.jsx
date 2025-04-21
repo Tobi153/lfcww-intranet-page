@@ -1,4 +1,4 @@
-import { useSideBar } from "../../../hooks/useSidebar";
+import { useSideBar } from "../../../hooks/SideBarContext";
 import "./Card.css";
 export function Card({ post }) {
   const { onOpenPopUp } = useSideBar();

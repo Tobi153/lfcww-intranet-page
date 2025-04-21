@@ -6,7 +6,7 @@ import { CarouselDots } from "../ui/CarouselDots/CarouselDots";
 import { details, birthdays, months } from "../../services/api/data";
 import { Card } from "../ui/CardComponent/Card";
 // import { useEffect, useState } from "react";
-import { useSideBar } from "../../hooks/useSidebar";
+import { useSideBar } from "../../hooks/SideBarContext";
 import Slider from "react-slick";
 const date = new Date();
 const month = months.at(date.getMonth());

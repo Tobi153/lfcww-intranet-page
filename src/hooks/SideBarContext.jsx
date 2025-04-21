@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
 
 export const SideBarContext = createContext();
@@ -67,4 +67,8 @@ export function SideBarProvider({ children }) {
       {children}
     </SideBarContext.Provider>
   );
+}
+
+export function useSideBar() {
+  return useContext(SideBarContext);
 }

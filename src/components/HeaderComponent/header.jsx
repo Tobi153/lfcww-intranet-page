@@ -8,7 +8,7 @@ import { DarkModeIcon } from "../ui/DarkModeIcon";
 import { Link } from "react-router-dom";
 
 import "./header.css";
-import { useSideBar } from "../../hooks/useSidebar";
+import { useSideBar } from "../../hooks/SideBarContext";
 export function Header() {
   const { setIsPopUp, isToggle, handleMenuToggle, isDarkMode, toggleDarkMode } =
     useSideBar();

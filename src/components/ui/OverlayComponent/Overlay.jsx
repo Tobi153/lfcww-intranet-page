@@ -1,5 +1,5 @@
 import "./Overlay.css";
-import { useSideBar } from "../../../hooks/useSidebar";
+import { useSideBar } from "../../../hooks/SideBarContext";
 // import { useState } from "react";
 // import {}
 export function Overlay({ children }) {

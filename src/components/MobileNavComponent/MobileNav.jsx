@@ -1,4 +1,4 @@
-import { useSideBar } from "../../hooks/useSidebar";
+import { useSideBar } from "../../hooks/SideBarContext";
 import { links } from "../../services/api/data";
 
 export function MobileNav() {

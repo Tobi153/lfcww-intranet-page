@@ -14,12 +14,7 @@ export function TutorialsPage() {
           <h2 className="tutorials-title text-4xl text-gray-950 dark:text-gray-50  font-semibold mb-1 flex-1">
             Watch Tutorials
           </h2>
-          <Link
-            to="/"
-            className="exit-icon cursor-pointer "
-            title="Exit"
-            // onClick={handleExitTutorial}
-          >
+          <Link to="/" className="exit-icon cursor-pointer " title="Exit">
             <ExitIcon />
           </Link>
         </div>

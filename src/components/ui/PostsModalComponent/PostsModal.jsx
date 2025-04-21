@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { Overlay } from "../OverlayComponent/Overlay";
-import { useSideBar } from "../../../hooks/useSidebar";
+import { useSideBar } from "../../../hooks/SideBarContext";
 import "./PostsModal.css";
 
 export function PostsModal() {

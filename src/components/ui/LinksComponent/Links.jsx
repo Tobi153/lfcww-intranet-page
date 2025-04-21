@@ -1,12 +1,8 @@
 import "./Links.css";
 import ArrowUpIcon from "../../../assets/arrow-up.svg";
 import { ChevronArrow } from "../ChevronArrow";
-// import { useState } from "react";
-// import { useSideBar } from "../../../hooks/useSidebar";
 import { Link } from "react-router-dom";
 export function Links({ link, toggleDropDown, isDropDown }) {
-  // const [isTutorial, setIsTutorial] = useSideBar();
-  // const { isTutorialActive, setIsTutorialActive } = useSideBar();
   function handleClick() {
     if (link.num === 1) {
       return toggleDropDown();

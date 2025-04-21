@@ -13,8 +13,6 @@ export function LeftSideBar() {
   const [isDropDown, setIsDropDown] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // const { isTutorialActive } = useSideBar();
-
   function toggleDropDown() {
     setIsDropDown((drop) => !drop);
   }

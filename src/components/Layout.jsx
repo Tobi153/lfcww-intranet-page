@@ -6,8 +6,8 @@ import { FaqModal } from "./FaqModalComponent/FaqModal";
 import { MobileNav } from "./MobileNavComponent/MobileNav";
 import { useEffect } from "react";
 import { Header } from "./HeaderComponent/header";
-import { useSideBar } from "../hooks/useSidebar";
-import { SideBarProvider } from "../hooks/SideBarContext";
+// import { useSideBar } from "../hooks/useSidebar";
+import { SideBarProvider, useSideBar } from "../hooks/SideBarContext";
 
 export function Layout() {
   return (
