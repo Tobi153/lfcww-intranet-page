@@ -1,46 +1,27 @@
-@import "tailwindcss";
-
 .right-sidebar {
   overflow-x: hidden;
+  background-color: var(--page-bg-color);
 }
 
 .article-title {
-  color: var(--white);
   font-weight: 600;
   text-align: center;
-  /* margin-bottom: 10px; */
   width: 90%;
   line-height: 1.2;
+  color: var(--article-title-color);
 }
-
-/* .birthdays {
-  width: 300px;
-  display: flex;
-  align-items: center;
-} */
 
 .posts,
 .birthdays {
-  /* width: 20000px; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* gap: 50px; */
-  /* margin-bottom: 10px; */
-  /* position: relative; */
-  width: 330px;
   height: 43%;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
 }
 
 .birthdays .card,
 .posts .card {
   width: 100%;
-  /* flex: 0 0 auto; */
 }
 
 .read-more {
-  color: blue;
   cursor: pointer;
 }
 
@@ -57,4 +38,30 @@
 .right-sidebar .slick-dots li.slick-active button:before {
   color: #fff;
   opacity: 1;
+}
+
+.right-sidebar .slick-slider.slick-initialized {
+  margin-left: -7px;
+}
+
+.right-sidebar .slick-dots li button:before {
+  color: var(--carousel-dots-color);
+  opacity: 0.4;
+}
+
+.right-sidebar .slick-dots li.slick-active button:before {
+  color: var(--carousel-dots-color);
+  opacity: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .right-sidebar {
+    height: calc(100% - 40px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .right-sidebar {
+    margin-top: 40px;
+  }
 }

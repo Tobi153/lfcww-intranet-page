@@ -8,18 +8,159 @@ header {
   align-items: center;
   justify-content: space-between;
    */
+  /* background-color: transparent !important; */
   padding: 20px 30px;
+  position: relative;
 }
 
-.nav-links {
+/* header button {} */
+
+/* .nav-links {
   display: flex;
   gap: 20px;
-}
+} */
 
 .winners-logo {
   width: 50px;
 }
+.logo-link {
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}
+
+.logo-link:focus,
+.logo-link:focus-visible {
+  outline: 2px dotted #7d7d7d;
+}
 
 .header-icon {
-  width: 24px;
+  width: 20px;
+  height: 20px;
 }
+
+.icon-button:focus,
+.icon-button:focus-visible {
+  outline: 2px dotted #7d7d7d;
+  outline-offset: 2px;
+}
+
+/* Menu icons */
+.menu-icon-container {
+  width: 28px;
+  height: 28px;
+  top: 71px;
+  right: 60px;
+  z-index: 50;
+}
+
+.menu-icon-container:focus,
+.menu-icon-container:focus-visible {
+  outline: 2px dotted #7d7d7d;
+  outline-offset: 2px;
+  z-index: 1000;
+}
+.menu-icon-container.absolute {
+  top: 31px;
+  right: 33px;
+}
+
+.menu-icon-container.fixed svg {
+  position: fixed;
+}
+.menu-icon-container.absolute svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-icon-container svg {
+  width: 28px;
+  height: 28px;
+  top: 71px;
+  right: 60px;
+  z-index: 50;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.menu-icon-container .hamburger-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.menu-icon-container .menu-close-icon {
+  opacity: 0;
+  transform: rotate(-90deg);
+  visibility: hidden;
+  /* display: none; */
+}
+
+.menu-icon-container.menu-open .hamburger-icon {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.menu-icon-container.menu-open .menu-close-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+  visibility: visible;
+}
+
+/* Theme icons */
+.theme-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+}
+
+.theme-icon-container:focus,
+.theme-icon-container:focus-visible {
+  outline: 2px dotted #7d7d7d;
+  outline-offset: 2px;
+  /* z-index: 1000; */
+}
+
+.theme-icon-container svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  /* top: 0;
+  left: 0; */
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.theme-icon-container .icon-light-mode {
+  opacity: 1;
+  visibility: visible;
+}
+
+.theme-icon-container .icon-dark-mode {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.theme-icon-container.dark .icon-light-mode {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.theme-icon-container.dark .icon-dark-mode {
+  opacity: 1;
+  visibility: visible;
+}
+
+button {
+  background-color: var(--page-bg-color);
+  color: var(--ring-color);
+}
+
+/* .ring-2 {
+  --tw-shadow-color: var(--ring-color);
+  --tw-ring-color: var(--ring)
+} */

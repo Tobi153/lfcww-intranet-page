@@ -7,7 +7,7 @@ export function CarouselDots({ items, activeIndex, setActiveIndex }) {
   }
 
   return (
-    <div className="carousel-dots">
+    <div className="carousel-dots  ">
       {items.map((_, i) => (
         <div
           className={`carousel-dot ${i === activeIndex ? "active" : ""}`}

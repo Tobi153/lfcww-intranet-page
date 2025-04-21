@@ -13,6 +13,7 @@
 
 .quick-links-title p {
   font-family: "Syne", sans-serif;
+  color: var(--quicklinks-color);
 }
 
 .quick-links-content {
@@ -24,12 +25,13 @@
 /* Slick slider custom  styles */
 .slick-dots li.slick-active button:before {
   font-size: 13px !important;
-  /* opacity: .75;
-  color: black; */
+  color: var(--carousel-dots-color);
+  opacity: 1;
 }
 
 .slick-dots li button:before {
   font-size: 10px !important;
+  color: var(--carousel-dots-color);
 }
 
 .slick-dots {
@@ -50,10 +52,10 @@
   opacity: 1;
 } */
 
-.slick-track {
+.quick-links-container .slick-track {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 @media screen and (max-width: 650px) {
@@ -70,7 +72,7 @@
   display: block;
 } */
 
-.slick-prev:before,
+.quick-links-container .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
   font-size: 30px;
@@ -82,14 +84,67 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-next {
+.quick-links-container .slick-next {
   right: -11px;
 }
 
-.slick-prev {
+.quick-links-container .slick-prev {
   left: -26px;
 }
 
-.slick-slider.slick-initialized {
-  margin-left: -15px;
+.quick-links-container .slick-slider.slick-initialized {
+  margin-left: -18px;
+}
+
+/* .slick-slider.slick-initialized {
+  margin-left: -9px;
+} */
+
+@media screen and (max-width: 1024px) {
+  .quick-links-container .slick-list {
+    margin-left: 8px;
+  }
+  .quick-links-container .slick-track {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.quick-links-container .slick-track .slick-slide > div:first-of-type {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 599px) {
+  .quick-links-container .slick-track .slick-slide > div:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quick-links-container .slick-dots {
+    bottom: -35px !important;
+  }
+  .quick-links-container .slick-dots li button::before {
+    color: var(--carousel-dots-color);
+  }
+
+  /* .quick-links-container
+    .slick-track
+    .slick-slide.slick-active:first-of-type >
+    div:first-of-type {
+    margin-bottom: 15px;
+  } */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  .quick-links-container {
+    width: 623px;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1375px) {
+  .quick-links-container {
+    width: 100%;
+  }
 }

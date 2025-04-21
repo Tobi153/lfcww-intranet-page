@@ -11,17 +11,20 @@ export function QuickLinks() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    // centerPadding: "60px",
+    rows: 2,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
+          rows: 2,
         },
       },
       {
@@ -30,6 +33,7 @@ export function QuickLinks() {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          rows: 1,
         },
       },
       {
@@ -37,15 +41,16 @@ export function QuickLinks() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          rows: 1,
         },
       },
     ],
   };
 
   return (
-    <div className="quick-links-container w-full   max-w-[1200px] mx-auto flex flex-col justify-center">
+    <div className="quick-links-container mt-3 w-full 2xl:w-full  items-center max-w-[1000px] lg:max-w-175 xl:max-w-full xl:w-175   mx-auto flex flex-col justify-center ">
       <div className="quick-links-title">
-        <p className="text-gray-950 text-2xl font-semibold text-center mb-5">
+        <p className="text-gray-950 dark:text-gray-100 text-2xl font-semibold text-center mb-5">
           QuickLinks
         </p>
       </div>

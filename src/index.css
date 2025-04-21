@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -13,6 +14,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1f2937;
+
+  /* --card-text-color: #d1d5db; */
+  /* --card-border-color: #01203d; */
 }
 
 /* a {

@@ -1,8 +1,6 @@
-@import "tailwindcss";
-
 .overlay {
   background-color: #000000a9;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 0;
   cursor: pointer;
@@ -11,23 +9,21 @@
 }
 
 .modal {
-  background-color: #fff;
-
   position: absolute;
   z-index: 100000;
   left: 52%;
   top: 50%;
   /* transform:; */
   border-radius: 20px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
 
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 30px;
   gap: 30px; */
-  position: absolute;
+  position: fixed;
   /* transform: translate(-50%, -50%) scale(0.5); */
   /* opacity: 0; */
   /* transition:
@@ -50,13 +46,7 @@
 
 .modal-date {
   color: var(--bright-red);
-  font-weight: 600;
   text-transform: uppercase;
-}
-
-.modal-note {
-  color: #3c3939;
-  line-height: 1.2;
 }
 
 .modal-name {

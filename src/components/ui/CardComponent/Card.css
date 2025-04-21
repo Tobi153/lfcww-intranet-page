@@ -1,40 +1,24 @@
-@import "tailwindcss";
-
 .card {
-  background-color: var(--white);
+  background-color: var(--card-bg-color);
   font-size: 16px;
-  color: #0a0a0a;
+  color: var(--card-text-color);
 
-  /* cursor: pointer; */
   left: 0;
   transition: transform 300ms ease-in-out;
   border: 2px solid var(--white);
-  width: 100px;
   height: 285px;
 }
-
-/* .card.active-card {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateX(0);
-} */
-
-/* .card.prev-card {
-  transform: translateX(-100%);
-  opacity: 0;
-} */
 
 .info-img {
   width: 100%;
   height: 150px;
-  /* border-radius: 7px; */
   background-size: cover;
   background-position: center top;
   margin-bottom: 5px;
 }
 
 .info-date {
-  color: var(--main-red);
+  color: var(--card-accent-color);
   font-weight: 600;
   margin-bottom: 2px;
 }
@@ -47,6 +31,7 @@
   line-clamp: 2;
   text-overflow: ellipsis;
   line-height: 1.2;
+  color: var(--card-text-color) !important;
 }
 
 .info-note.expanded {
@@ -61,8 +46,13 @@
 }
 
 .info-name {
-  color: #0a0a0a;
+  color: var(--card-text-color);
   font-weight: 700;
+}
+
+.read-more {
+  color: var(--card-accent-color);
+  transition: all 0.3s ease;
 }
 
 .read-more:hover {

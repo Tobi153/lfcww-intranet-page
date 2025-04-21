@@ -1,4 +1,4 @@
-import { useSideBar } from "../../../hoooks/useSidebar";
+import { useSideBar } from "../../../hooks/useSidebar";
 import "./Card.css";
 export function Card({ post }) {
   const { onOpenPopUp } = useSideBar();
@@ -10,7 +10,7 @@ export function Card({ post }) {
   return (
     <>
       <div
-        className={`card p-5 rounded-xl`}
+        className={`card p-5  rounded-xl`}
         tabIndex="0"
         role="article"
         aria-label={`Post by ${post.name} on ${post.date}`}
@@ -27,7 +27,7 @@ export function Card({ post }) {
           {!post.name ? post.notes : post.notes.note1}
         </p>
 
-        <span className="read-more" onClick={() => onOpenPopUp(post)}>
+        <span className="read-more " onClick={() => onOpenPopUp(post)}>
           Read more
         </span>
       </div>

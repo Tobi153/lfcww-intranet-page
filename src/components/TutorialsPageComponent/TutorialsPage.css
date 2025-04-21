@@ -1,0 +1,7 @@
+.tutorials-title {
+  color: var(--article-title-color);
+}
+
+.tutorials-description {
+  color: var(--tutorials-md-text-color);
+}

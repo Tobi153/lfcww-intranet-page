@@ -1,18 +1,29 @@
-import postImg1 from "../../assets/img/Bishop-David-Oyedepo.jpeg";
+import postImg1 from "../../assets/img/Bishop-David-Oyedepo.webp";
 import postImg2 from "../../assets/img/Bishop-David-Oyedepo-1.webp";
 
-import birthdayImg1 from "../../assets/img/tobi.jpg";
-import birthdayImg2 from "../../assets/img/samuel1.jpg";
-import birthdayImg3 from "../../assets/img/samuel2.jpg";
-import birthdayImg4 from "../../assets/img/somi.jpg";
+import birthdayImg1 from "../../assets/img/tobi.webp";
+import birthdayImg2 from "../../assets/img/samuel1.webp";
+import birthdayImg3 from "../../assets/img/samuel2.webp";
+import birthdayImg4 from "../../assets/img/somi.webp";
 
 // import iconDyanmics from "../../assets/dynamics.svg";
 // import iconSharepoint from "../../assets/sharepoint.svg";
 // import iconOffice from "../../assets/office.svg";
 // import iconTeams from "../../assets/Teams.svg";
-import imgDynamics from "../../assets/img/dynamics365.png";
-import imgOffice from "../../assets/img/office365.png";
-import imgSharepoint from "../../assets/img/sharepoint.jpg";
+import imgDynamics from "../../assets/img/dynamics365.webp";
+import imgOffice from "../../assets/img/office365.webp";
+import imgSharepoint from "../../assets/img/sharepoint.webp";
+import imgTeams from "../../assets/img/microsoft-teams.webp";
+import imgMandate from "../../assets/img/mandate.webp";
+import imgArticles from "../../assets/img/articles.webp";
+import imgPhoneBook from "../../assets/img/phone-book.webp";
+import imgTutorials from "../../assets/img/watch-tutorials.webp";
+import imgTabernacle from "../../assets/img/faith-tabernacle.webp";
+import imgOutlook from "../../assets/img/Outlook.webp";
+import imgPowerBI from "../../assets/img/PowerBi.webp";
+import imgPowerApps from "../../assets/img/PowerApps.webp";
+import imgPowerAutomate from "../../assets/img/PowerAutomate.webp";
+import imgOneDrive from "../../assets/img/OneDrive.webp";
 
 import DynamicsLogo from "../../assets/dynamics.svg";
 import ArrowUpIcon from "../../assets/arrow-up.svg";
@@ -94,6 +105,14 @@ export const birthdays = [
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 142752,
     img: birthdayImg1,
@@ -113,6 +132,14 @@ export const birthdays = [
       note5:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 166532,
@@ -134,6 +161,14 @@ export const birthdays = [
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 128354,
     img: birthdayImg3,
@@ -153,6 +188,14 @@ export const birthdays = [
       note5:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 143972,
@@ -174,6 +217,14 @@ export const birthdays = [
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 186323,
     img: birthdayImg4,
@@ -193,6 +244,14 @@ export const birthdays = [
       note5:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
       note6:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note7:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note8:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note9:
+        "Happy birthday bro. Long life and proserity in this new age. Amen.",
+      note10:
         "Happy birthday bro. Long life and proserity in this new age. Amen.",
     },
     id: 196729,
@@ -243,58 +302,127 @@ export const links = [
     logo: TeamsLogo,
     arrow: null,
     num: 4,
-    img: imgOffice,
+    img: imgTeams,
   },
   {
     name: "Watch Tutorials",
     logo: TutorialsLogo,
     arrow: null,
     num: 5,
-    img: imgOffice,
+    img: imgTutorials,
   },
   {
     name: "The Mandate",
     logo: MandateLogo,
     arrow: null,
     num: 6,
-    img: imgOffice,
+    img: imgMandate,
   },
   {
     name: "Faith Tabernacle",
     logo: ChurchLogo,
     arrow: null,
     num: 7,
-    img: imgOffice,
+    img: imgTabernacle,
   },
   {
     name: "Phone Book",
     logo: PhoneBookLogo,
     arrow: null,
     num: 8,
-    img: imgOffice,
+    img: imgPhoneBook,
   },
-  { name: "Articles", logo: ArticlesLogo, arrow: null, num: 9, img: imgOffice },
+  {
+    name: "Articles",
+    logo: ArticlesLogo,
+    arrow: null,
+    num: 9,
+    img: imgArticles,
+  },
 ];
 
 export const faqs = [
   {
     question: "What is an intranet page?",
     answer:
-      "An intraner Page is a page which users in a local networj have access to in orer to communicate and share resources",
+      "An intranet page is a page which users in a local network have access to in orer to communicate and share resources",
   },
   {
     question: "I didn't find what i want here",
     answer:
-      "An intraner Page is a page which users in a local networj have access to in orer to communicate and share resources",
+      "An intranet page is a page which users in a local network have access to in orer to communicate and share resources",
   },
   {
     question: "How do i make a payment",
     answer:
-      "An intraner Page is a page which users in a local networj have access to in orer to communicate and share resources",
+      "An intranet page is a page which users in a local network have access to in orer to communicate and share resources",
   },
   {
     question: "What is an intranet page?",
     answer:
-      "An intraner Page is a page which users in a local networj have access to in orer to communicate and share resources",
+      "An intranet page is a page which users in a local network have access to in orer to communicate and share resources",
+  },
+];
+
+export const bannerImages = [
+  postImg1,
+  postImg2,
+  postImg1,
+  postImg2,
+  postImg1,
+  postImg2,
+];
+
+export const watchTutorials = [
+  {
+    title: "Getting started with Microsoft Teams",
+    thumbnail: imgTeams,
+    description:
+      "Learn how to collaborate, chat, and meet using Microsoft Teams.",
+  },
+  {
+    title: "Mastering Microsoft Dynamics",
+    thumbnail: imgDynamics,
+    description:
+      "Understand the basics of Microsoft Dynamics for CRM and ERP solutions.",
+  },
+  {
+    title: "Introduction to Microsoft Office 365",
+    thumbnail: imgOffice,
+    description:
+      "Explore the core features and tools within Microsoft Office 365.",
+  },
+  {
+    title: "Getting started with SharePoint",
+    thumbnail: imgSharepoint,
+    description:
+      "Learn how to create, manage, and collaborate using SharePoint sites.",
+  },
+  {
+    title: "Power BI for Beginners",
+    thumbnail: imgPowerBI,
+    description:
+      "Visualize and analyze data effectively using Microsoft Power BI.",
+  },
+  {
+    title: "Automating Tasks with Power Automate",
+    thumbnail: imgPowerAutomate,
+    description: "Create automated workflows to save time on repetitive tasks.",
+  },
+  {
+    title: "Building Apps with Power Apps",
+    thumbnail: imgPowerApps,
+    description: "Get started building low-code apps for your business needs.",
+  },
+  {
+    title: "Using OneDrive for Business",
+    thumbnail: imgOneDrive,
+    description:
+      "Learn to store, sync, and share files securely with OneDrive.",
+  },
+  {
+    title: "Scheduling with Microsoft Outlook",
+    thumbnail: imgOutlook,
+    description: "Master email, calendar, and task management using Outlook.",
   },
 ];

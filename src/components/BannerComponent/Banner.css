@@ -1,10 +1,48 @@
-.banner {
-  /* width: 100%;
-  height: 400px; */
-  background: blue;
-  border-radius: 15px;
-  background-image: url("../../assets//img/Bishop-David-Oyedepo.jpeg");
-  background-position: top center;
-  background-size: cover;
-  /* box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.067); */
+.banner-wrapper {
+  background-color: var(--page-bg-color);
+}
+
+.slick-slider.slick-initialized {
+  width: 100%;
+}
+
+.banner-wrapper .slick-dots {
+  bottom: 15px !important;
+}
+
+.banner-wrapper .slick-dots li button:before {
+  color: #fff;
+  opacity: 0.8;
+}
+.banner-wrapper .slick-dots li button:before:focus,
+.banner-wrapper .slick-dots li button:before:focus-visible {
+  outline: 2px dotted #aaa;
+}
+
+.banner-wrapper .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.banner-wrapper .slick-dots li.slick-active button:before:focus,
+.banner-wrapper .slick-dots li.slick-active button:before:focus-visible {
+  outline: 2px dotted red !important;
+}
+
+.banner-wrapper button.slick-arrow {
+  display: none !important;
+}
+
+.banner-wrapper .slick-track {
+  gap: 0;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  .banner-wrapper {
+    width: 623px;
+  }
+}
+@media screen and (min-width: 1301px) and (max-width: 1375px) {
+  .banner-wrapper {
+    width: 100%;
+  }
 }
