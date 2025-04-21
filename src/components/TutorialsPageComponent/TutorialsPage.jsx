@@ -3,15 +3,9 @@ import { TutorialCard } from "../ui/TutorialCard/TutorialCard";
 import { watchTutorials } from "../../services/api/data";
 import { TutorialsIcon } from "../ui/TutorialsIcon";
 import { ExitIcon } from "../ui/ExitIcon";
-import { useSideBar } from "../../hooks/useSidebar";
 import { Link } from "react-router-dom";
 // import
 export function TutorialsPage() {
-  const { setIsTutorialActive } = useSideBar();
-
-  function handleExitTutorial() {
-    setIsTutorialActive(false);
-  }
   return (
     <div className="tutorials-container w-full h-full  mt-5">
       <div className="tutorial-header mb-5 ">
