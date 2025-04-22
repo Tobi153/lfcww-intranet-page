@@ -30,6 +30,8 @@
 
   --article-title-color: #030712;
 
+  --page-text-color: #030712;
+
   --quicklinks-color: #030712;
 }
 
@@ -59,6 +61,8 @@
   --tutorials-md-text-color: #e5e7eb;
 
   --article-title-color: #f9fafb;
+
+  --page-text-color: #fff;
 
   --quicklinks-color: #f3f4f6;
 }
@@ -94,6 +98,8 @@ body {
   /* overflow-x: hidden; */
 }
 
+@media screen and (max-width: 640px) {
+}
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;

@@ -29,6 +29,7 @@
   /* transition:
     transform 2s ease,
     opacity 2s ease; */
+  background-color: var(--page-bg-color);
 }
 
 .modal .modal-img {
@@ -58,9 +59,9 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  position: absolute;
+  /* position: absolute;
   right: 30px;
-  top: 30px;
+  top: 30px; */
   background-color: transparent;
   font-size: 30px;
   display: flex;

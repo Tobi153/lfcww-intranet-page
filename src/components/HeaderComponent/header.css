@@ -48,8 +48,8 @@ header {
 .menu-icon-container {
   width: 28px;
   height: 28px;
-  top: 71px;
-  right: 60px;
+  top: 63px;
+  right: 48px;
   z-index: 50;
 }
 
@@ -66,6 +66,8 @@ header {
 
 .menu-icon-container.fixed svg {
   position: fixed;
+  top: 63px;
+  right: 53px;
 }
 .menu-icon-container.absolute svg {
   position: absolute;
@@ -76,8 +78,8 @@ header {
 .menu-icon-container svg {
   width: 28px;
   height: 28px;
-  top: 71px;
-  right: 60px;
+  top: 63px;
+  right: 48px;
   z-index: 50;
   transition:
     opacity 0.3s ease,
@@ -115,6 +117,7 @@ header {
   align-items: center;
   width: 28px;
   height: 28px;
+  background-color: var(--page-bg-color);
 }
 
 .theme-icon-container:focus,
@@ -128,6 +131,8 @@ header {
   position: absolute;
   width: 24px;
   height: 24px;
+  background-color: var(--page-bg-color);
+
   /* top: 0;
   left: 0; */
   transition:

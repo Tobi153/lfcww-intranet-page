@@ -35,7 +35,7 @@ function LayoutContent() {
       <Overlay>{selectedCard ? <PostsModal /> : <FaqModal />}</Overlay>
       <MobileNav />
       <div
-        className={`grid px-8 pr-5 py-8 mx-auto grid-cols-1 ${isTutorialActive ? "lg:grid-colums-[1fr_3fr] xl:grid-cols-[25%_75%] 2xl:grid-cols-[22.5%_74.5%]" : ""}  w-full lg:grid-rows-[0.05fr_1fr_1fr] lg:grid-cols-[1fr_1.5fr] xl:grid-cols-[25%_45%_25%] 2xl:grid-cols-[22.5%_50%_22.5%] xl:grid-rows-[auto_1fr] max-w-[2000px]  gap-x-10 gap-y-5  mx-auto lg:mx-auto`}
+        className={`grid px-8 pr-5 py-8 mx-auto grid-cols-1 ${isTutorialActive ? "lg:grid-colums-[1fr_3fr] xl:grid-cols-[25%_75%] 2xl:grid-cols-[22.5%_74.5%]" : ""}  w-full lg:grid-rows-[0.05fr_1fr_1fr]  xl:grid-cols-[25%_45%_25%] 2xl:grid-cols-[22.5%_50%_22.5%] xl:grid-rows-[auto_1fr] max-w-[2000px]  gap-x-10 gap-y-5  mx-auto lg:mx-auto`}
       >
         <div className="lg:col-span-1 header-container lg:hidden">
           <Header />

@@ -16,7 +16,7 @@ export function QuickLink({ quickLink }) {
           <ArrowIcon />
         </div>
       </div>
-      <p className="title">{quickLink.name}</p>
+      <p className="title text-[1.1rem] lg:text-[1.3rem]">{quickLink.name}</p>
     </div>
   );
 }

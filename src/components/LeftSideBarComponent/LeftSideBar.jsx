@@ -21,20 +21,16 @@ export function LeftSideBar() {
     setIsPlaying((playing) => !playing);
   }
   return (
-    <aside className="left-sidebar h-full lg:max-w-[700px] max-w-[500px] w-full mx-auto flex flex-col gap-3 rounded-2xl   mt-10 mb-5 lg:mb-0 lg:mt-0  ring-[#ffffff]   lg:shadow-lg lg:shadow-black/10 ring-3 dark:ring-gray-800">
-      <div className="hidden sidebar-logo-container lg:flex gap-2 items-center mb-3">
-        <Link
-          to="/"
-          className="sidebar-logo hidden lg:block  self-start "
-          tabIndex="0"
-        >
+    <aside className="left-sidebar  lg:mb-0  h-full lg:max-w-[700px] max-w-[500px] w-full mx-auto flex flex-col gap-3 rounded-2xl   mt-10  lg:mt-0  ring-[#ffffff]   lg:shadow-lg lg:shadow-black/10 ring-3 dark:ring-gray-800">
+      <div className="hidden sidebar-logo-container ml-10 mt-5  lg:flex gap-2 items-center mb-3">
+        <Link to="/" className="sidebar-logo hidden lg:block " tabIndex="0">
           <img
             src={winnersLogo}
             alt="Winners logo"
             className="winners-logo w-[40px]"
           />
         </Link>
-        <p className="logo-text text-[12px]/3 uppercase font-bold text-gray-950 dark:text-gray-50">
+        <p className="logo-text text-[0.75rem]/3 uppercase font-bold text-gray-950 dark:text-gray-50">
           Living Faith <br /> Church World Wide
         </p>
       </div>
@@ -58,7 +54,7 @@ export function LeftSideBar() {
           
         </>
       )} */}
-      <button onClick={handlePlayButton} className="self-center">
+      <button onClick={handlePlayButton} className="mt-10 lg:mt-0 self-center">
         <img
           src={isPlaying ? PauseButton : PlayButton}
           alt="play-button"
@@ -68,9 +64,9 @@ export function LeftSideBar() {
         />
       </button>
 
-      <p className="domi-text   text-gray-950 dark:text-gray-50 text-[16px] text-center">
-        <span className="bolden text-[20px]">LISTEN TO DOMI RADIO</span> Music,
-        Messages, Testimonies <br /> and lots more...
+      <p className="domi-text lg:mb-5  text-gray-950 dark:text-gray-50 text-[0.9rem] text-center">
+        <span className="bolden text-[1.2rem]">LISTEN TO DOMI RADIO</span>{" "}
+        Music, Messages, Testimonies <br /> and lots more...
       </p>
     </aside>
   );

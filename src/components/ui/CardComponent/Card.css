@@ -14,13 +14,11 @@
   height: 150px;
   background-size: cover;
   background-position: center top;
-  margin-bottom: 5px;
 }
 
 .info-date {
   color: var(--card-accent-color);
   font-weight: 600;
-  margin-bottom: 2px;
 }
 
 .info-note {

@@ -1,9 +1,7 @@
 .nav-link {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   padding: 7px 25px;
-  width: 100%;
+  width: 85%;
+  margin-inline: auto;
   border-radius: 12px;
 
   cursor: pointer;

@@ -1,7 +1,7 @@
 .left-sidebar {
-  padding: 30px;
   background-color: var(--page-bg-color);
-  /* box-shadow: var(--ring-color); */
+  /* box-sizing: border-box; */
+  /* padding: 30px; */
 }
 
 .logo-text {

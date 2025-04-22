@@ -1,0 +1,7 @@
+.mobile-nav {
+  background-color: var(--page-bg-color);
+}
+
+.mobile-link {
+  color: var(--page-text-color);
+}

@@ -52,7 +52,7 @@ export function Header() {
           <HamburgerIcon onClick={handleMenuToggle} />
         </button>
         <button
-          className={`${isDarkMode ? "dark" : ""} cursor-pointer mr-10 lg:mr-0 theme-icon-container lg:p-[25px] w-[24px] h-[24px] lg:w-auto lg:h-auto border-0  outline-0 bg-none  bg-[#f5f6f5] lg:ring-2 dark:bg-gray-900
+          className={`cursor-pointer mr-10 lg:mr-0 theme-icon-container lg:p-[25px] w-[24px] h-[24px] lg:w-auto lg:h-auto border-0  outline-0 bg-none bg-[#f5f6f5] lg:ring-2 dark:bg-gray-900
  lg:shadow-md  lg:shadow-black/10 lg:rounded-4xl`}
           aria-label={
             isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"

@@ -1,8 +1,12 @@
 .faq-toggle-btn p {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   transform: rotate(-90deg);
 }
 
 .faq-toggle-btn.open p {
   transform: rotate(0);
+}
+
+.modal-title {
+  color: var(--page-text-color);
 }
