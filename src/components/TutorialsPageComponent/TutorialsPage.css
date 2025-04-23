@@ -5,3 +5,20 @@
 .tutorials-description {
   color: var(--tutorials-md-text-color);
 }
+
+.exit-icon svg {
+  stroke: var(--tutorials-md-text-color) !important;
+  fill: var(--tutorials-md-text-color) !important;
+}
+
+@media screen and (max-width: 640px) {
+  .exit-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .tutorials-header-container svg {
+    width: 32px;
+    height: 32px;
+  }
+}

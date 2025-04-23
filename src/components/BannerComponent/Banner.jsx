@@ -16,7 +16,7 @@ export function Banner() {
   return (
     <>
       <div
-        className="banner-wrapper lg:max-w-173 xl:max-w-full 2xl:w-full   relative w-full xl:w-175   transition-transform  duration-500  lg:h-[510px] "
+        className="banner-wrapper lg:max-w-173 xl:max-w-full 2xl:w-full   relative w-full max-w-full xl:w-175   transition-transform  duration-500  lg:h-[510px] "
         tabIndex={0}
       >
         {/* <div className="banner-overlay bg-[#0000003e] rounded-2xl absolute top-0 h-[558px] w-full"></div> */}

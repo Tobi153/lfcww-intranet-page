@@ -10,7 +10,7 @@ export function HomePage() {
       <div className="hidden lg:block lg:col-span-1 header-container">
         <Header />
       </div>
-      <div className="w-full mx-auto main-content lg:flex flex-col gap-1  lg:w-full lg:relative">
+      <div className="w-full mx-auto main-content lg:flex flex-col lg:w-full lg:relative">
         <Banner />
         <QuickLinks />
       </div>

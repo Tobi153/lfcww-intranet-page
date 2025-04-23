@@ -8,17 +8,21 @@ import { Link } from "react-router-dom";
 export function TutorialsPage() {
   return (
     <div className="tutorials-container w-full h-full  mt-5">
-      <div className="tutorial-header mb-5 ">
-        <div className=" flex items-center gap-3">
+      <div className="tutorials-header mb-5 ">
+        <div className="tutorials-header-container flex items-center gap-2 lg:gap-3 flex-wrap mb-1">
           <TutorialsIcon />
-          <h2 className="tutorials-title text-4xl text-gray-950 dark:text-gray-50  font-semibold mb-1 flex-1">
+          <h2 className="tutorials-title text-[1.3rem] lg:text-4xl text-gray-950 dark:text-gray-50  font-semibold mb-1 flex-1">
             Watch Tutorials
           </h2>
-          <Link to="/" className="exit-icon cursor-pointer " title="Exit">
+          <Link
+            to="/"
+            className="exit-icon cursor-pointer mt-[-5px]"
+            title="Exit"
+          >
             <ExitIcon />
           </Link>
         </div>
-        <p className="tutorials-description text-gray-800 dark:text-gray-200 text-lg w-7/10">
+        <p className="tutorials-description text-gray-800 dark:text-gray-200 lg:text-lg text-[0.9rem] w-full  ">
           Explore tutorials on powerful business tools to boost productivity and
           enhance professional skills.
         </p>

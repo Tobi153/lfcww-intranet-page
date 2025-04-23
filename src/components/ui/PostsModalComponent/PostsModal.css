@@ -1,3 +1,16 @@
 /* .comment-box {
   scrollbar-color: var(--scrollbar-color-1) var(--scrollbar-color-2);
 } */
+.modal-comment,
+.comment-author,
+.comment-note,
+.modal-note {
+  color: var(--modal-text-color);
+}
+
+/* .comment-author {
+  color: var(--modal-text-color);
+}
+
+.comment-note {
+} */

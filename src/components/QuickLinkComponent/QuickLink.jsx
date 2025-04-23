@@ -3,7 +3,7 @@ import { ArrowIcon } from "../ui/ArrowIcon";
 export function QuickLink({ quickLink }) {
   return (
     <div
-      className={`quick-link flex  flex-col justify-between  p-5 bg-[#060505b0] rounded-2xl h-[150px] lg:ml-[16px] lg:mr-[2px] `}
+      className={`quick-link flex flex-col justify-between p-5 bg-[#060505b0] rounded-2xl h-[150px] lg:ml-[16px] lg:mr-[2px]`}
       style={{ backgroundImage: `url(${quickLink.img})` }}
       tabIndex={0}
     >

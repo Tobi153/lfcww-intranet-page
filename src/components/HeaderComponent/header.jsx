@@ -13,11 +13,15 @@ export function Header() {
   const { setIsPopUp, isToggle, handleMenuToggle, isDarkMode, toggleDarkMode } =
     useSideBar();
   return (
-    <header className="header select-none w-full col-span-3 flex items-center justify-between lg:justify-end  rounded-xl shadow-2xl shadow-black/10 lg:shadow-none lg:shadow-transparent ring-2 ring-[#fff] dark:ring-gray-800 lg:ring-0">
-      <Link to="/" className="logo-link lg:hidden" tabIndex="0">
-        <img src={winnersLogo} alt="Winners logo" className="winners-logo " />
+    <header className="header py-4 px-6 lg:py-5 lg:px-7 justify-between select-none w-full col-span-3 flex items-center  lg:justify-end  rounded-2xl lg:rounded-xl shadow-2xl shadow-black/10 lg:shadow-none lg:shadow-transparent ring-2 ring-[#fff] dark:ring-gray-800 lg:ring-0 ">
+      <Link to="/" className="logo-link lg:hidden " tabIndex="0">
+        <img
+          src={winnersLogo}
+          alt="Winners logo"
+          className="winners-logo w-10 "
+        />
       </Link>
-      <nav className="nav-links flex items-center gap-3 lg:gap-5  ">
+      <nav className="nav-links flex items-center gap-2 lg:gap-5 mr-[-5px] lg:mr-0">
         <button
           className="cursor-pointer flex items-center justify-center icon-button w-[24px] h-[24px] lg:w-auto lg:h-auto border-0  outline-0 bg-none lg:p-4 dark:bg-gray-900
   bg-[#f5f6f5] lg:ring-2  lg:shadow-md lg:shadow-black/10 lg:rounded-4xl"
@@ -38,12 +42,12 @@ export function Header() {
           <img
             src={iconFaq}
             alt="Frequently Asked Questions button"
-            className="header-icon faq-icon cursor-pointer w-[24px] h-[24px]"
+            className="header-icon faq-icon cursor-pointer"
             aria-label="Frequently Asked Questions"
           />
         </button>
         <button
-          className={`lg:hidden w-[28px] h-[28px] border-0 outline-0 ${isToggle ? "fixed" : "absolute"}   bg-none p-0 menu-icon-container  ${isToggle ? "menu-open" : ""}`}
+          className={`lg:hidden w-[24px] h-[24px] border-0 outline-0 ${isToggle ? "fixed" : "absolute"}   bg-none p-0 menu-icon-container  ${isToggle ? "menu-open" : ""}`}
           aria-label={`${isToggle ? "Close menu" : "Open menu"}`}
           aria-expanded={isToggle}
           aria-controls="sidebar-menu"
@@ -51,9 +55,10 @@ export function Header() {
           <MenuCloseIcon onClick={handleMenuToggle} />
           <HamburgerIcon onClick={handleMenuToggle} />
         </button>
+
         <button
-          className={`cursor-pointer mr-10 lg:mr-0 theme-icon-container lg:p-[25px] w-[24px] h-[24px] lg:w-auto lg:h-auto border-0  outline-0 bg-none bg-[#f5f6f5] lg:ring-2 dark:bg-gray-900
- lg:shadow-md  lg:shadow-black/10 lg:rounded-4xl`}
+          className={`cursor-pointer  mr-10 lg:mr-0 theme-icon-container lg:p-[25px] w-[24px] h-[24px] lg:w-auto lg:h-auto border-0  outline-0 bg-none bg-[#f5f6f5] lg:ring-2 dark:bg-gray-900
+ lg:shadow-md  lg:shadow-black/10 lg:rounded-4xl ${isDarkMode ? "dark" : ""}`}
           aria-label={
             isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"
           }

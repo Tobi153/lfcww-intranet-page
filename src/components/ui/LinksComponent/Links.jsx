@@ -12,10 +12,11 @@ export function Links({ link, toggleDropDown, isDropDown }) {
 
   return (
     <li
-      className={`nav-link nav-link-${link.num} ${!isDropDown ? "drop-down" : ""} mb-3 `}
+      className={`nav-link  nav-link-${link.num} ${!isDropDown ? "drop-down" : ""} mb-3 `}
       role="button"
       aria-expanded={isDropDown}
       onClick={handleClick}
+      tabIndex={0}
     >
       <Link
         to={link.name === "Watch Tutorials" ? "/tutorials" : "/"}
