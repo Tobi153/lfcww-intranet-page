@@ -4,13 +4,18 @@ import { useEffect } from "react";
 // import { useState } from "react";
 // import {}
 export function Overlay({ children }) {
-  const { handleClosePopUp, isPopUp, selectedCard: card } = useSideBar();
+  const {
+    handleClosePopUp,
+    isPopUp,
+    selectedCard: card,
+    pageRefContainer,
+  } = useSideBar();
 
   useEffect(() => {
     if (isPopUp) {
-      document.body.style.overflow = "hidden";
+      pageRefContainer.current.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "";
+      pageRefContainer.current.style.overflow = "";
     }
   });
 

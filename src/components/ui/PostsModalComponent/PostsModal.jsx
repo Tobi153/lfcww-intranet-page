@@ -8,7 +8,7 @@ export function PostsModal() {
   return (
     <>
       <div
-        className="modal-img w-full   h-[200px] lg:h-full  lg:mb-0 "
+        className="modal-img w-full h-[200px] lg:h-full  lg:mb-0 "
         style={{ backgroundImage: `url(${card.img})` }}
       ></div>
       <div
@@ -47,7 +47,7 @@ export function PostsModal() {
               {Object.values(card.notes).map((note, index) => (
                 <div
                   key={index}
-                  className={`cursor-pointer  comment text-[14px] text-gray-700 dark:text-gray-300  transition-all duration-500`}
+                  className={`cursor-pointer   comment text-[14px] text-gray-700 dark:text-gray-300  transition-all duration-500`}
                   onClick={() => setActiveIndex(index)}
                 >
                   <p className="font-bold comment-author text-gray-950 dark:text-gray-50">

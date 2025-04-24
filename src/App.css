@@ -96,10 +96,23 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: "Figtree", sans-serif;
   font-size: 20px;
-  /* overflow-x: hidden; */
+  /* position: fixed; */
+}
+
+.page-container {
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (min-width: 640px) {

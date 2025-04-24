@@ -1,15 +1,10 @@
 import postImg1 from "../../assets/img/Bishop-David-Oyedepo.webp";
 import postImg2 from "../../assets/img/Bishop-David-Oyedepo-1.webp";
-
 import birthdayImg1 from "../../assets/img/tobi.webp";
 import birthdayImg2 from "../../assets/img/samuel1.webp";
 import birthdayImg3 from "../../assets/img/samuel2.webp";
 import birthdayImg4 from "../../assets/img/somi.webp";
 
-// import iconDyanmics from "../../assets/dynamics.svg";
-// import iconSharepoint from "../../assets/sharepoint.svg";
-// import iconOffice from "../../assets/office.svg";
-// import iconTeams from "../../assets/Teams.svg";
 import imgDynamics from "../../assets/img/dynamics365.webp";
 import imgOffice from "../../assets/img/office365.webp";
 import imgSharepoint from "../../assets/img/sharepoint.webp";
@@ -379,50 +374,59 @@ export const watchTutorials = [
     thumbnail: imgTeams,
     description:
       "Learn how to collaborate, chat, and meet using Microsoft Teams.",
+    id: "z6IUiamE3-U",
   },
   {
     title: "Mastering Microsoft Dynamics",
     thumbnail: imgDynamics,
     description:
       "Understand the basics of Microsoft Dynamics for CRM and ERP solutions.",
+    id: "_cKr2uOaPu4",
   },
   {
     title: "Introduction to Microsoft Office 365",
     thumbnail: imgOffice,
     description:
       "Explore the core features and tools within Microsoft Office 365.",
+    id: "psHKqAJ03HQ",
   },
   {
     title: "Getting started with SharePoint",
     thumbnail: imgSharepoint,
     description:
       "Learn how to create, manage, and collaborate using SharePoint sites.",
+    id: "Ue5jIxtuJNg",
   },
   {
     title: "Power BI for Beginners",
     thumbnail: imgPowerBI,
     description:
       "Visualize and analyze data effectively using Microsoft Power BI.",
+    id: "c7LrqSxjJQQ",
   },
   {
     title: "Automating Tasks with Power Automate",
     thumbnail: imgPowerAutomate,
     description: "Create automated workflows to save time on repetitive tasks.",
+    id: "SUsik0FGzI0",
   },
   {
     title: "Building Apps with Power Apps",
     thumbnail: imgPowerApps,
     description: "Get started building low-code apps for your business needs.",
+    id: "2RzCbd5XgJg",
   },
   {
     title: "Using OneDrive for Business",
     thumbnail: imgOneDrive,
     description:
       "Learn to store, sync, and share files securely with OneDrive.",
+    id: "prA75mu3arc",
   },
   {
     title: "Scheduling with Microsoft Outlook",
     thumbnail: imgOutlook,
     description: "Master email, calendar, and task management using Outlook.",
+    id: "rnnDyU9hgRM",
   },
 ];

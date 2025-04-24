@@ -1,13 +1,18 @@
 import "./TutorialsPage.css";
-import { TutorialCard } from "../ui/TutorialCard/TutorialCard";
+import { TutorialCard } from "../../components/ui/TutorialCard/TutorialCard";
 import { watchTutorials } from "../../services/api/data";
-import { TutorialsIcon } from "../ui/TutorialsIcon";
-import { ExitIcon } from "../ui/ExitIcon";
+import { TutorialsIcon } from "../../components/ui/TutorialsIcon";
+import { ExitIcon } from "../../components/ui/ExitIcon";
 import { Link } from "react-router-dom";
+import { SearchBar } from "../../components/ui/SearchBar";
+// import { useSideBar } from "../../hooks/SideBarContext";
 // import
 export function TutorialsPage() {
+  // const { searched } = useSideBar();
+
   return (
-    <div className="tutorials-container w-full h-full  mt-5">
+    <div className="tutorials-container w-full h-full  mt-2 lg:mt-5">
+      <SearchBar />
       <div className="tutorials-header mb-5 ">
         <div className="tutorials-header-container flex items-center gap-2 lg:gap-3 flex-wrap mb-1">
           <TutorialsIcon />

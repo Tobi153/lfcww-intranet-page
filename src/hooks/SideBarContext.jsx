@@ -1,5 +1,7 @@
 import { createContext, useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
+import { useRef } from "react";
+import { watchTutorials } from "../services/api/data";
 
 export const SideBarContext = createContext();
 
@@ -9,6 +11,17 @@ export function SideBarProvider({ children }) {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isTutorial, setIsTutorial] = useState(false);
   const [isToggle, setIsToggle] = useState(false);
+  const [search, setSearch] = useState("");
+
+  const pageRefContainer = useRef(null);
+
+  const filteredTutorials = watchTutorials.map((tutorial) => {
+    const searchTerm = search.toLocaleLowerCase();
+    return (
+      tutorial.title.toLowerCase().includes(searchTerm) ||
+      tutorial.description.toLowerCase().includes(searchTerm)
+    );
+  });
 
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
@@ -21,8 +34,7 @@ export function SideBarProvider({ children }) {
 
   const location = useLocation();
 
-  const isTutorialActive = location.pathname === "/tutorials";
-
+  const isTutorialActive = location.pathname.includes("/tutorials");
   function toggleDarkMode() {
     setIsDarkMode((prev) => !prev);
   }
@@ -62,6 +74,10 @@ export function SideBarProvider({ children }) {
         isDarkMode,
         toggleDarkMode,
         isTutorialActive,
+        pageRefContainer,
+        filteredTutorials,
+        search,
+        setSearch,
       }}
     >
       {children}
