@@ -13,7 +13,7 @@ export function TutorialVideosPage() {
         <iframe
           width="560"
           height="315"
-          className="w-8/10 h-[500px] rounded-2xl"
+          className="w-8/10 h-[625px] rounded-2xl"
           src={`https://www.youtube.com/embed/${tutorial.id}?si=lTG9LEur9T_ypR-c`}
           title={tutorial.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -22,12 +22,12 @@ export function TutorialVideosPage() {
         ></iframe>
       </div>
 
-      <div className="related-videos-container w-8/10 mt-7 ">
-        <h1 className="related-videos-heading mb-5 text-2xl font-semibold text-center text-gray-900 ">
+      <div className="related-videos-container w-8/10 mt-4 mr-5">
+        <h1 className="related-videos-heading mb-3 text-2xl font-semibold text-center text-gray-900 ">
           Related videos
         </h1>
 
-        <div className="related-videos h-[220px] grid grid-cols-3 gap-10 grid-rows-[auto_1fr] overflow-y-scroll">
+        <div className="related-videos h-[220px] grid grid-cols-3 gap-5  grid-rows-[auto_1fr] overflow-y-scroll">
           {relatedVideos.map((tutorial, index) => (
             <TutorialCard key={index} tutorial={tutorial} />
           ))}
