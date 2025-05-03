@@ -1,3 +1,11 @@
 .related-videos-heading {
   color: var(--article-title-color);
 }
+
+.summary-heading {
+  color: var(--article-title-color);
+}
+
+.summary-text {
+  color: var(--article-title-color);
+}
